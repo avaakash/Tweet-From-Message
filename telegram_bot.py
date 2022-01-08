@@ -60,7 +60,7 @@ def delete_tweet(update: Update, context: CallbackContext):
     else:
         context.bot.send_message(chat_id=update.effective_chat.id, text="No tweet to delete!")
 
-def main():
+def bot():
     """
         Main function to start the bot
     """
@@ -81,6 +81,3 @@ def main():
 
     # Starting the bot
     updater.start_polling()
-
-if __name__ == '__main__':
-    main()
