@@ -1,6 +1,7 @@
 """
     Performs twitter API authentication
 """
+import logging
 import tweepy
 from settings import get_env
 
@@ -25,8 +26,8 @@ def authenticate():
     # Verifying API and returning the API object
     try:
         api.verify_credentials()
-        print("Verified")
+        logging.info("Twitter API Verified")
         return api
     except tweepy.errors.Unauthorized:
-        print("Wrong Credentials")
+        logging.error("Wrong Twitter API Credentials")
         return None

@@ -23,5 +23,8 @@ def get_env():
     environ_secrets["twitter_username"] = env.get("TWITTER_USERNAME", "")
     environ_secrets["telegram_secret"] = env.get("TELEGRAM_SECRET", "")
     environ_secrets["telegram_allowed_ids"] = env.get("TELEGRAM_ALLOWED_IDS", "")
+    environ_secrets["redis_host"] = env.get("REDIS_HOST", "")
+    environ_secrets["redis_port"] = env.get("REDIS_PORT", "")
+    environ_secrets["redis_password"] = env.get("REDIS_PASSWORD", "")
 
     return environ_secrets
