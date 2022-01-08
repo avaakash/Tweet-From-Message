@@ -7,7 +7,7 @@ from telegram import Update
 from telegram.ext import CallbackContext
 import tweepy
 
-from validation import restricted, check_tweet_length
+from utils.validation import restricted, check_tweet_length
 
 from twitter import twitter
 

@@ -3,7 +3,7 @@
 """
 import redis
 
-from settings import get_env
+from utils.settings import get_env
 
 def connect():
     """Connect to redis server"""

@@ -4,7 +4,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 
-from settings import get_env
+from utils.settings import get_env
 
 def get_secret():
     """Fetches the secrets"""
