@@ -7,15 +7,11 @@ from .auth import authenticate
 api = authenticate()
 
 def tweet(message) -> int:
-    """
-        Tweet a message
-    """
+    """Tweet a message"""
     tweet_data = api.update_status(message)
     print(tweet_data.id, tweet_data.text, tweet_data.entities["hashtags"], sep="\n")
     return tweet_data.id, tweet_data.text
 
 def delete_tweet(tweet_id):
-    """
-        Delete a tweet
-    """
+    """Delete a tweet"""
     api.destroy_status(id=tweet_id)

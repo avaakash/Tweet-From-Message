@@ -4,9 +4,7 @@
 from telegram_bot import bot
 
 def main():
-    """
-        main function to start the bot
-    """
+    """main function to start the bot"""
     bot()
 
 if __name__ == "__main__":

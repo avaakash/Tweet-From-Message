@@ -2,9 +2,7 @@
     Twitter response classes
 """
 class Tweet:
-    """
-        Tweet object
-    """
+    """ Tweet object """
     def __init__(self, tweet_id, text, hashtags):
         self.tweet_id = tweet_id
         self.text = text

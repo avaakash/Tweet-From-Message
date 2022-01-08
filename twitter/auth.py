@@ -5,9 +5,7 @@ import tweepy
 from settings import get_env
 
 def authenticate():
-    """
-        Authenticates the twitter API
-    """
+    """Authenticates the twitter API"""
     # Getting the tokens and keys
     environ_secrets = get_env()
     # Setting up variables
