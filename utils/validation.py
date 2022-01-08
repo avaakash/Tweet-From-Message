@@ -4,7 +4,7 @@
 from functools import wraps
 import logging
 
-from settings import get_env
+from utils.settings import get_env
 
 def restricted(func):
     """Restrict usage of func to allowed users only"""
