@@ -37,6 +37,7 @@ def send_tweet(update: Update, context: CallbackContext):
     else:
         update_message(update, context)
 
+@restricted
 def delete_tweet(update: Update, context: CallbackContext):
     """Delete a tweet command"""
     if update.message is not None:
@@ -52,6 +53,7 @@ def delete_tweet(update: Update, context: CallbackContext):
     else:
         update_message(update, context, "delete")
 
+@restricted
 def comment_tweet(update: Update, context: CallbackContext):
     """Tweets as a comment to the last tweet"""
     if update.message is not None:
