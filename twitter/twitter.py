@@ -21,3 +21,8 @@ def reply_to_tweet(message, tweet_id):
         message, in_reply_to_status_id=str(tweet_id), auto_populate_reply_metadata=True
     )
     return tweet_data.id, tweet_data.text
+
+def get_non_read_tweets(username):
+    """Get the non read tweets"""
+    tweets = api.user_timeline(screen_name=username)
+    return tweets

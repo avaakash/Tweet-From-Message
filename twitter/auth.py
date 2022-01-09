@@ -3,7 +3,7 @@
 """
 import logging
 import tweepy
-from utils.settings import get_env
+from settings import get_env
 
 def authenticate():
     """Authenticates the twitter API"""

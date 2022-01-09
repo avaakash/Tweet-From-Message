@@ -1,7 +1,7 @@
 """
     The entry point of the application
 """
-from telegram_bot import bot
+from telegram_handler.telegram_bot import bot
 
 def main():
     """main function to start the bot"""

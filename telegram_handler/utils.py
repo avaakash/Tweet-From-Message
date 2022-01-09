@@ -4,7 +4,7 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 
-from utils.settings import get_env
+from settings import get_env
 
 def get_secret():
     """Fetches the secrets"""
@@ -16,7 +16,7 @@ def get_username():
 
 def get_tweet_url(tweet_id):
     """Returns the url of a tweet"""
-    return f"t.co/{get_username()}/status/{tweet_id}"
+    return f"twitter.com/{get_username()}/status/{tweet_id}"
 
 def update_message(update: Update, context: CallbackContext, command: str = None):
     """sends a message if an old message was edited"""
